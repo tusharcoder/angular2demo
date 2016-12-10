@@ -1,0 +1,24 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" ng-app="editorModule">
+<head>
+    <meta charset="utf-8" />
+    <title>TypeScript HTML App</title>
+    <link rel="stylesheet" href="app.css" type="text/css" />
+</head>
+<body>
+    <div ng-controller="labelCollectionController as vm">
+        <ul>
+            <li ng-repeat="label in vm.sequence">
+                    <span ng-style="{'background-color':label.color}">
+                        {{label.Text}}
+                    </span>
+            </li>
+        </ul>
+    </div>
+
+    <script src="Scripts/angular.js"></script>
+    <script src="App_Scripts/editorLabel.js"></script>
+    <script src="App_Scripts/editorCollection.js"></script>
+</body>
+</html>
